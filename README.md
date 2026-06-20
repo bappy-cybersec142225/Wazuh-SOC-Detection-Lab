@@ -1,4 +1,5 @@
 # Wazuh-SOC-Detection-Lab
+![photo] (<img width="1280" height="714" alt="SOC LAB" src="https://github.com/user-attachments/assets/f07e94e3-db70-4bbd-b646-68a33068b5d5" />)
 
 ### Threat Monitoring, Detection Engineering, and Attack Simulation with Wazuh, Sysmon, and Atomic Red Team
 (https://documentation.wazuh.com/current/installation-guide/index.html)
