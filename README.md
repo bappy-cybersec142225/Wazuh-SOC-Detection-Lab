@@ -1,6 +1,7 @@
 # Wazuh-SOC-Detection-Lab
 
 ### Threat Monitoring, Detection Engineering, and Attack Simulation with Wazuh, Sysmon, and Atomic Red Team
+https://documentation.wazuh.com/current/installation-guide/index.html
 
 This project is designed as a professional cybersecurity portfolio demonstrating:
 
