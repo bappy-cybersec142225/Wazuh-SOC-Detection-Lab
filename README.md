@@ -258,7 +258,7 @@ Credential Dumping Detection
 Technique
 
 ```text
-T1082
+
 ```
 
 Description
@@ -320,7 +320,7 @@ Capture screenshots for:
 08-Sysmon-Logs.png
 ```
 
-### Atomic Red Team
+### InjectProc
 
 ```text
 09-Atomic-Test-T1059.png
