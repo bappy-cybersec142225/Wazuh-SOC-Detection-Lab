@@ -42,7 +42,7 @@ Build a complete SOC lab capable of:
 Windows 11 Endpoint
 │
 ├── Sysmon
-├── Atomic Red Team
+├── InjectProc
 └── Wazuh Agent
         │
         ▼
@@ -83,7 +83,7 @@ wazuh
 soc
 siem
 sysmon
-atomic-red-team
+InjectProc
 mitre-attck
 detection-engineering
 threat-hunting
@@ -104,25 +104,18 @@ wazuh-soc-detection-lab/
 │
 ├── README.md
 │
-├── docs/
-│   ├── architecture/
-│   ├── installation/
-│   ├── detection-rules/
-│   ├── dashboards/
-│   └── screenshots/
-│
 ├── configs/
 │   ├── sysmon/
 │   ├── wazuh/
 │   └── windows-agent/
 │
-├── atomic-tests/
+├── InjectProc/
 │
 ├── detections/
 │
 ├── reports/
 │
-├── images/
+├── Screenshots/
 │
 └── LICENSE
 ```
@@ -176,11 +169,10 @@ Contents:
 Contents:
 
 * Sysmon Installation
-* SwiftOnSecurity Config
 
 ---
 
-## 05-AtomicRedTeam.md
+## 05-InjectProc
 
 Contents:
 
@@ -277,48 +269,16 @@ System Information Discovery
 
 ---
 
-# Phase 7: Atomic Red Team Tests
+# Phase 7: InjectProc
 
-Folder
+The InjectProc tool and payload (hello-world-x64.dll) were downloaded and placed in a dedicated working directory.
+
+```
+C:\Users\fazleh\Downloads\DLLInjection\InjectProc.exe
+
+C:\Users\fazleh\Downloads\DLLInjection\hello-world-x64.dll
 
 ```text
-atomic-tests/
-```
-
-Create
-
-## T1059-PowerShell.md
-
-```powershell
-Invoke-AtomicTest T1059.001
-```
-
-Expected Alerts
-
-```text
-PowerShell Execution
-```
-
----
-
-## T1003-CredentialDumping.md
-
-```powershell
-Invoke-AtomicTest T1003
-```
-
-Expected Alerts
-
-```text
-Credential Access Activity
-```
-
----
-
-## T1082-SystemDiscovery.md
-
-```powershell
-Invoke-AtomicTest T1082
 ```
 
 Expected Alerts
@@ -334,8 +294,6 @@ System Information Discovery
 Create
 
 ```text
-docs/screenshots/
-```
 
 Capture screenshots for:
 
@@ -379,8 +337,6 @@ Capture screenshots for:
 15-MITRE-Mapping.png
 ```
 
----
-
 # Phase 9: Create Detection Reports
 
 Folder
@@ -419,7 +375,7 @@ README Structure
 5. Lab Environment
 6. Installation Guide
 7. Sysmon Configuration
-8. Atomic Red Team
+8. InjectProc
 9. Detection Engineering
 10. MITRE ATT&CK Mapping
 11. Screenshots
